@@ -9,14 +9,7 @@ import {
   Hidden,
 } from '@material-ui/core';
 
-import backArrow from '../assets/backArrow.svg';
-import forwardArrow from '../assets/forwardArrow.svg';
-import analytics from '../assets/analytics.svg';
-import seo from '../assets/seo.svg';
-import outreach from '../assets/outreach.svg';
-import ecommerce from '../assets/ecommerce.svg';
-
-import CallToAction from './ui/CallToAction';
+import CallToAction from '../src/ui/CallToAction';
 
 const useStyles = makeStyles((theme) => ({
   heading: {
@@ -71,7 +64,7 @@ const Websites = (props) => {
               onClick={() => props.setSelectedIndex(2)}
             >
               <img
-                src={backArrow}
+                src="/assets/backArrow.svg"
                 alt="Back to iOs/Android App Development Page"
               />
             </IconButton>
@@ -112,7 +105,10 @@ const Websites = (props) => {
               to="/services"
               onClick={() => props.setSelectedIndex(0)}
             >
-              <img src={forwardArrow} alt="Forward to Services Page" />
+              <img
+                src="/assets/forwardArrow.svg"
+                alt="Forward to Services Page"
+              />
             </IconButton>
           </Grid>
         </Hidden>
@@ -134,7 +130,7 @@ const Websites = (props) => {
             </Grid>
             <Grid item>
               <img
-                src={analytics}
+                src="/assets/analytics.svg"
                 style={{ marginLeft: '-2.75em' }}
                 alt="graph with magnifying glass revealing 1's and 0's"
               />
@@ -166,7 +162,10 @@ const Websites = (props) => {
               </Typography>
             </Grid>
             <Grid item>
-              <img src={ecommerce} alt="world outline made of dollar signs" />
+              <img
+                src="/assets/ecommerce.svg"
+                alt="world outline made of dollar signs"
+              />
             </Grid>
           </Grid>
         </Grid>
@@ -207,7 +206,7 @@ const Websites = (props) => {
               </Typography>
             </Grid>
             <Grid item>
-              <img src={outreach} alt="megaphone" />
+              <img src="/assets/outreach.svg" alt="megaphone" />
             </Grid>
           </Grid>
         </Grid>
@@ -246,7 +245,10 @@ const Websites = (props) => {
               </Typography>
             </Grid>
             <Grid item>
-              <img src={seo} alt="website standing on winner's podium" />
+              <img
+                src="/assets/seo.svg"
+                alt="website standing on winner's podium"
+              />
             </Grid>
           </Grid>
         </Grid>

@@ -3,11 +3,7 @@ import { Link } from 'react-router-dom';
 import { makeStyles, useTheme } from '@material-ui/styles';
 import { Grid, Typography, Button, useMediaQuery } from '@material-ui/core';
 
-import ButtonArrow from './ui/ButtonArrow';
-
-import customSoftwareIcon from '../assets/Custom Software Icon.svg';
-import mobileAppsIcon from '../assets/mobileIcon.svg';
-import websitesIcon from '../assets/websiteIcon.svg';
+import ButtonArrow from '../src/ui/ButtonArrow';
 
 const useStyles = makeStyles((theme) => ({
   learnButton: {
@@ -105,7 +101,7 @@ const Services = (props) => {
           <Grid item style={{ marginRight: matchesSM ? 0 : '5em' }}>
             <img
               className={classes.icon}
-              src={mobileAppsIcon}
+              src="/assets/mobileIcon.svg"
               alt="mobile phone icon"
               width="250em"
             />
@@ -156,7 +152,7 @@ const Services = (props) => {
           <Grid item>
             <img
               className={classes.icon}
-              src={customSoftwareIcon}
+              src="/assets/customSoftware.svg"
               alt="custom software icon"
             />
           </Grid>
@@ -206,7 +202,7 @@ const Services = (props) => {
           <Grid item style={{ marginRight: matchesSM ? 0 : '5em' }}>
             <img
               className={classes.icon}
-              src={websitesIcon}
+              src="/assets/websiteIcon.svg"
               alt="website icon"
               width="250em"
             />

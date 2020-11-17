@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../src/Link';
 import Lottie from 'react-lottie';
 import { useTheme } from '@material-ui/styles';
 import {
@@ -10,16 +10,13 @@ import {
   Card,
   CardContent,
 } from '@material-ui/core';
-import ButtonArrow from './ui/ButtonArrow';
+import ButtonArrow from '../src/ui/ButtonArrow';
 
-import CallToAction from './ui/CallToAction';
+import CallToAction from '../src/ui/CallToAction';
 
-import animationData from '../animations/landinganimation/data';
-import customSoftwareIcon from '../assets/Custom Software Icon.svg';
-import mobileAppsIcon from '../assets/mobileIcon.svg';
-import websitesIcon from '../assets/websiteIcon.svg';
+import animationData from '../src/animations/landinganimation/data';
 
-import { landingStyles } from './ui/styles';
+import { landingStyles } from '../src/ui/styles';
 
 const LandingPage = (props) => {
   const classes = landingStyles();
@@ -36,26 +33,26 @@ const LandingPage = (props) => {
     },
   };
   return (
-    <Grid container direction='column' className={classes.mainContainer}>
+    <Grid container direction="column" className={classes.mainContainer}>
       <Grid item>
         {/*-----Hero Block-----*/}
-        <Grid container justify='flex-end' alignItems='center' direction='row'>
+        <Grid container justify="flex-end" alignItems="center" direction="row">
           <Grid sm item className={classes.heroTextContainer}>
-            <Typography variant='h2' align='center'>
+            <Typography variant="h2" align="center">
               Bringing West Coast Technology <br />
               to the Midwest
             </Typography>
             <Grid
               container
-              justify='center'
+              justify="center"
               className={classes.buttonContainer}
             >
               <Grid item>
                 <Button
                   component={Link}
-                  to='/estimate'
+                  href="/estimate"
                   className={classes.estimateButton}
-                  variant='contained'
+                  variant="contained"
                   onClick={() => {
                     props.setValue(5);
                   }}
@@ -66,8 +63,8 @@ const LandingPage = (props) => {
               <Grid item>
                 <Button
                   component={Link}
-                  to='/revolution'
-                  variant='outlined'
+                  href="/revolution"
+                  variant="outlined"
                   className={classes.learnButtonHero}
                   onClick={() => {
                     props.setValue(2);
@@ -92,7 +89,7 @@ const LandingPage = (props) => {
         {/*-----Custom Software Block-----*/}
         <Grid
           container
-          direction='row'
+          direction="row"
           justify={matchesSM ? 'center' : undefined}
           className={classes.serviceContainer}
         >
@@ -103,18 +100,18 @@ const LandingPage = (props) => {
               textAlign: matchesSM ? 'center' : undefined,
             }}
           >
-            <Typography variant='h4'>Custom Software Development</Typography>
-            <Typography variant='subtitle1' className={classes.subtitle}>
+            <Typography variant="h4">Custom Software Development</Typography>
+            <Typography variant="subtitle1" className={classes.subtitle}>
               Save Energy. Save Time. Save Money
             </Typography>
-            <Typography variant='subtitle1'>
+            <Typography variant="subtitle1">
               Complete digital solutions. from investigation to {''}
               <span className={classes.specialText}>celebration</span>
             </Typography>
             <Button
               component={Link}
-              to='/customsoftware'
-              variant='outlined'
+              href="/customsoftware"
+              variant="outlined"
               className={classes.learnButton}
               onClick={() => {
                 props.setValue(1);
@@ -132,8 +129,8 @@ const LandingPage = (props) => {
           <Grid item>
             <img
               className={classes.icon}
-              src={customSoftwareIcon}
-              alt='custom software icon'
+              src="/assets/customSoftware.svg"
+              alt="custom software icon"
             />
           </Grid>
         </Grid>
@@ -142,7 +139,7 @@ const LandingPage = (props) => {
         {/*-----iOS/Android Block-----*/}
         <Grid
           container
-          direction='row'
+          direction="row"
           justify={matchesSM ? 'center' : 'flex-end'}
           className={classes.serviceContainer}
         >
@@ -152,18 +149,18 @@ const LandingPage = (props) => {
               textAlign: matchesSM ? 'center' : undefined,
             }}
           >
-            <Typography variant='h4'>iOS/Android App Development</Typography>
-            <Typography variant='subtitle1' className={classes.subtitle}>
+            <Typography variant="h4">iOS/Android App Development</Typography>
+            <Typography variant="subtitle1" className={classes.subtitle}>
               Extend Functionality. Extend Access. Increase Engagement.
             </Typography>
-            <Typography variant='subtitle1'>
+            <Typography variant="subtitle1">
               Integrate your web experience or create a standalone app
               {matchesSM ? null : <br />} with either mobile platform
             </Typography>
             <Button
               component={Link}
-              to='/mobileapps'
-              variant='outlined'
+              href="/mobileapps"
+              variant="outlined"
               className={classes.learnButton}
               onClick={() => {
                 props.setValue(1);
@@ -181,8 +178,8 @@ const LandingPage = (props) => {
           <Grid item style={{ marginRight: matchesSM ? 0 : '5em' }}>
             <img
               className={classes.icon}
-              src={mobileAppsIcon}
-              alt='mobile phone icon'
+              src="/assets/mobileIcon"
+              alt="mobile phone icon"
             />
           </Grid>
         </Grid>
@@ -191,7 +188,7 @@ const LandingPage = (props) => {
         {/*-----Websites Block-----*/}
         <Grid
           container
-          direction='row'
+          direction="row"
           justify={matchesSM ? 'center' : undefined}
           className={classes.serviceContainer}
         >
@@ -202,17 +199,17 @@ const LandingPage = (props) => {
               textAlign: matchesSM ? 'center' : undefined,
             }}
           >
-            <Typography variant='h4'>Website Development</Typography>
-            <Typography variant='subtitle1' className={classes.subtitle}>
+            <Typography variant="h4">Website Development</Typography>
+            <Typography variant="subtitle1" className={classes.subtitle}>
               Reach More. Discover More. Sell More.
             </Typography>
-            <Typography variant='subtitle1'>
+            <Typography variant="subtitle1">
               Optimized for Search Engines, built for speed.
             </Typography>
             <Button
               component={Link}
-              to='/websites'
-              variant='outlined'
+              href="/websites"
+              variant="outlined"
               className={classes.learnButton}
               onClick={() => {
                 props.setValue(1);
@@ -230,8 +227,8 @@ const LandingPage = (props) => {
           <Grid item>
             <img
               className={classes.icon}
-              src={websitesIcon}
-              alt='website icon'
+              src="/assets/mobileIcon"
+              alt="website icon"
             />
           </Grid>
         </Grid>
@@ -241,30 +238,30 @@ const LandingPage = (props) => {
         <Grid
           container
           style={{ height: '100em', marginTop: '12em' }}
-          alignItems='center'
-          justify='center'
+          alignItems="center"
+          justify="center"
         >
           <Card className={classes.revolutionCard}>
             <CardContent>
               <Grid
                 container
-                direction='column'
+                direction="column"
                 style={{ textAlign: 'center' }}
               >
                 <Grid item>
-                  <Typography variant='h3' gutterBottom>
+                  <Typography variant="h3" gutterBottom>
                     The Revolution
                   </Typography>
                 </Grid>
                 <Grid item>
-                  <Typography variant='subtitle1'>
+                  <Typography variant="subtitle1">
                     Visionary insights coupled with cutting-edge technology is a
                     recipe for revolution.
                   </Typography>
                   <Button
                     component={Link}
-                    to='/revolution'
-                    variant='outlined'
+                    href="/revolution"
+                    variant="outlined"
                     className={classes.learnButtonHero}
                     onClick={() => {
                       props.setValue(2);
@@ -289,8 +286,8 @@ const LandingPage = (props) => {
         <Grid
           container
           style={{ height: '80em' }}
-          alignItems='center'
-          direction='row'
+          alignItems="center"
+          direction="row"
           className={classes.infoBackground}
         >
           <Grid
@@ -309,17 +306,17 @@ const LandingPage = (props) => {
               <Grid
                 container
                 style={{ marginBottom: matchesXS ? '10em' : 0 }}
-                direction='column'
+                direction="column"
               >
-                <Typography variant='h2' style={{ color: 'white' }}>
+                <Typography variant="h2" style={{ color: 'white' }}>
                   About Us
                 </Typography>
-                <Typography variant='subtitle2'>Let's get personal</Typography>
+                <Typography variant="subtitle2">Let's get personal</Typography>
                 <Grid item>
                   <Button
                     component={Link}
-                    to='/about'
-                    variant='outlined'
+                    href="/about"
+                    variant="outlined"
                     className={classes.learnButton}
                     style={{ color: 'white', borderColor: 'white' }}
                     onClick={() => {
@@ -327,7 +324,7 @@ const LandingPage = (props) => {
                     }}
                   >
                     <span style={{ marginRight: 10 }}> Learn More</span>
-                    <ButtonArrow width={10} height={10} fill='white' />
+                    <ButtonArrow width={10} height={10} fill="white" />
                   </Button>
                 </Grid>
               </Grid>
@@ -340,21 +337,21 @@ const LandingPage = (props) => {
                 textAlign: matchesXS ? 'center' : 'right',
               }}
             >
-              <Grid container direction='column'>
-                <Typography variant='h2' style={{ color: 'white' }}>
+              <Grid container direction="column">
+                <Typography variant="h2" style={{ color: 'white' }}>
                   Contact Us
                 </Typography>
-                <Typography variant='subtitle2'>
+                <Typography variant="subtitle2">
                   Say hello!{' '}
-                  <span role='img' aria-label='waving hand'>
+                  <span role="img" aria-label="waving hand">
                     👋🏻
                   </span>
                 </Typography>
                 <Grid item>
                   <Button
                     component={Link}
-                    to='/contact'
-                    variant='outlined'
+                    href="/contact"
+                    variant="outlined"
                     className={classes.learnButton}
                     style={{ color: 'white', borderColor: 'white' }}
                     onClick={() => {
@@ -362,7 +359,7 @@ const LandingPage = (props) => {
                     }}
                   >
                     <span style={{ marginRight: 10 }}> Learn More</span>
-                    <ButtonArrow width={10} height={10} fill='white' />
+                    <ButtonArrow width={10} height={10} fill="white" />
                   </Button>
                 </Grid>
               </Grid>

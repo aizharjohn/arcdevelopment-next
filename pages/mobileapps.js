@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import { Link } from 'react-router-dom';
+import Link from '../src/Link';
 import { makeStyles, useTheme } from '@material-ui/styles';
 import {
   Grid,
@@ -10,15 +10,9 @@ import {
   Hidden,
 } from '@material-ui/core';
 
-import backArrow from '../assets/backArrow.svg';
-import forwardArrow from '../assets/forwardArrow.svg';
-import swiss from '../assets/swissKnife.svg';
-import access from '../assets/extendAccess.svg';
-import engagement from '../assets/increaseEngagement.svg';
+import integrationAnimation from '../src/animations/integrationAnimation/data.json';
 
-import integrationAnimation from '../animations/integrationAnimation/data.json';
-
-import CallToAction from './ui/CallToAction';
+import CallToAction from '../src/ui/CallToAction';
 
 const useStyles = makeStyles((theme) => ({
   heading: {
@@ -72,10 +66,13 @@ const MobileApps = (props) => {
             <IconButton
               style={{ backgroundColor: 'transparent' }}
               component={Link}
-              to="/customsoftware"
+              href="/customsoftware"
               onClick={() => props.setSelectedIndex(1)}
             >
-              <img src={backArrow} alt="Back to Custom Software Page" />
+              <img
+                src="/assets/backArrow.svg"
+                alt="Back to Custom Software Page"
+              />
             </IconButton>
           </Grid>
         </Hidden>
@@ -118,11 +115,11 @@ const MobileApps = (props) => {
             <IconButton
               style={{ backgroundColor: 'transparent' }}
               component={Link}
-              to="/websites"
+              href="/websites"
               onClick={() => props.setSelectedIndex(3)}
             >
               <img
-                src={forwardArrow}
+                src="/assets/forwardArrow.svg"
                 alt="Forward to Website Development Page"
               />
             </IconButton>
@@ -217,7 +214,7 @@ const MobileApps = (props) => {
             </Typography>
           </Grid>
           <Grid item>
-            <img src={swiss} alt="swiss army knife" />
+            <img src="/assets/swissKnife.svg" alt="swiss army knife" />
           </Grid>
         </Grid>
         <Grid
@@ -238,7 +235,7 @@ const MobileApps = (props) => {
           </Grid>
           <Grid item>
             <img
-              src={access}
+              src="/assets/extendedAccess.svg"
               style={{ maxWidth: matchesXS ? '20em' : '28em' }}
               alt="tear-one-off sign"
             />
@@ -251,7 +248,10 @@ const MobileApps = (props) => {
             </Typography>
           </Grid>
           <Grid item>
-            <img src={engagement} alt="app with notifications" />
+            <img
+              src="/assets/increaseEngagement.svg"
+              alt="app with notifications"
+            />
           </Grid>
         </Grid>
       </Grid>

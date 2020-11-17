@@ -15,7 +15,7 @@ import {
   ListItemText,
 } from '@material-ui/core';
 import ElevationScroll from './ElevationScroll';
-import { Link } from 'react-router-dom';
+import Link from '../Link';
 import { useTheme } from '@material-ui/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import { headerStyles } from './styles';
@@ -122,7 +122,7 @@ const Header = (props) => {
             disableRipple
             className={classes.tab}
             component={Link}
-            to={route.link}
+            href={route.link}
             label={route.name}
             aria-owns={route.ariaOwns}
             aria-haspopup={route.ariaPopup}
@@ -132,7 +132,7 @@ const Header = (props) => {
       </Tabs>
       <Button
         component={Link}
-        to="/estimate"
+        href="/estimate"
         disableRipple
         variant="contained"
         color="secondary"
@@ -158,7 +158,7 @@ const Header = (props) => {
           <MenuItem
             key={`${option}, ${i}`}
             component={Link}
-            to={option.link}
+            href={option.link}
             classes={{ root: classes.menuItem }}
             onClick={(event) => {
               handleMenuItemClick(event, i);
@@ -193,7 +193,7 @@ const Header = (props) => {
               divider
               button
               component={Link}
-              to={route.link}
+              href={route.link}
               selected={props.value === route.activeIndex}
               classes={{ selected: classes.drawerItemSelected }}
               onClick={() => {
@@ -218,7 +218,7 @@ const Header = (props) => {
               root: classes.drawerItemEstimate,
               selected: classes.drawerItemSelected,
             }}
-            to="/estimate"
+            href="/estimate"
             selected={props.value === 5}
           >
             <ListItemText className={classes.drawerItem} disableTypography>
@@ -244,7 +244,7 @@ const Header = (props) => {
           <Toolbar disableGutters>
             <Button
               component={Link}
-              to="/"
+              href="/"
               className={classes.logoContainer}
               onClick={() => props.setValue(0)}
               disableRipple

@@ -1,6 +1,4 @@
 import { makeStyles } from '@material-ui/styles';
-import revolutionBackground from '../../assets/repeatingBackground.svg';
-import infoBackground from '../../assets/infoBackground.svg';
 
 // Header Styles
 export const headerStyles = makeStyles((theme) => ({
@@ -218,7 +216,7 @@ export const landingStyles = makeStyles((theme) => ({
     },
   },
   revolutionBackground: {
-    backgroundImage: `url(${revolutionBackground})`,
+    backgroundImage: url('/assets/repeatingBackground'),
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -240,7 +238,7 @@ export const landingStyles = makeStyles((theme) => ({
     },
   },
   infoBackground: {
-    backgroundImage: `url(${infoBackground})`,
+    backgroundImage: url('/assets/infoBackground.svg'),
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
