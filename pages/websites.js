@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../src/Link';
 import { makeStyles, useTheme } from '@material-ui/styles';
 import {
   Grid,
@@ -60,7 +60,7 @@ const Websites = (props) => {
             <IconButton
               style={{ backgroundColor: 'transparent' }}
               component={Link}
-              to="/mobileapps"
+              href="/mobileapps"
               onClick={() => props.setSelectedIndex(2)}
             >
               <img
@@ -102,7 +102,7 @@ const Websites = (props) => {
             <IconButton
               style={{ backgroundColor: 'transparent' }}
               component={Link}
-              to="/services"
+              href="/services"
               onClick={() => props.setSelectedIndex(0)}
             >
               <img

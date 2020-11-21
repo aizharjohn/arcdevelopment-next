@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from '../src/Link';
 import { makeStyles, useTheme } from '@material-ui/styles';
 import { Grid, Typography, Button, useMediaQuery } from '@material-ui/core';
 
@@ -82,7 +82,7 @@ const Services = (props) => {
             </Typography>
             <Button
               component={Link}
-              to="/mobileapps"
+              href="/mobileapps"
               variant="outlined"
               className={classes.learnButton}
               onClick={() => {
@@ -133,7 +133,7 @@ const Services = (props) => {
             </Typography>
             <Button
               component={Link}
-              to="/customsoftware"
+              href="/customsoftware"
               variant="outlined"
               className={classes.learnButton}
               onClick={() => {
@@ -183,7 +183,7 @@ const Services = (props) => {
             </Typography>
             <Button
               component={Link}
-              to="/websites"
+              href="/websites"
               variant="outlined"
               className={classes.learnButton}
               onClick={() => {

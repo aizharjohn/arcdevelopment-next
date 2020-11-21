@@ -216,7 +216,7 @@ export const landingStyles = makeStyles((theme) => ({
     },
   },
   revolutionBackground: {
-    backgroundImage: url('/assets/repeatingBackground'),
+    backgroundImage: `url('/assets/repeatingBackground.svg')`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -238,7 +238,7 @@ export const landingStyles = makeStyles((theme) => ({
     },
   },
   infoBackground: {
-    backgroundImage: url('/assets/infoBackground.svg'),
+    backgroundImage: `url('/assets/infoBackground.svg')`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -260,7 +260,7 @@ export const ctaStyles = makeStyles((theme) => ({
     },
   },
   background: {
-    backgroundImage: url('/assets/background.jpg'),
+    backgroundImage: `url('/assets/background.jpg')`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -268,7 +268,7 @@ export const ctaStyles = makeStyles((theme) => ({
     height: '35em',
     width: '100%',
     [theme.breakpoints.down('md')]: {
-      backgroundImage: url('/assets/mobileBackground.jpg'),
+      backgroundImage: `url('/assets/mobileBackground.jpg')`,
       backgroundAttachment: 'inherit',
     },
   },
