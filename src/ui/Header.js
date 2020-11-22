@@ -5,6 +5,7 @@ import {
   Tabs,
   Tab,
   Button,
+  Hidden,
   Menu,
   MenuItem,
   useMediaQuery,
@@ -100,7 +101,10 @@ const Header = (props) => {
           }
           break;
         case '/estimate':
-          props.setValue(5);
+          if (props.value !== 5) {
+            props.setValue(5);
+          }
+
           break;
         default:
           break;
@@ -255,7 +259,8 @@ const Header = (props) => {
                 alt="company_logo"
               />
             </Button>
-            {matches ? drawer : tabs}
+            <Hidden mdDown>{tabs}</Hidden>
+            <Hidden lgUp>{drawer}</Hidden>
           </Toolbar>
         </AppBar>
       </ElevationScroll>
