@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import { makeStyles, useTheme } from '@material-ui/styles';
 import Lottie from 'react-lottie';
 import { Grid, Typography, useMediaQuery } from '@material-ui/core';
@@ -33,6 +34,17 @@ const Revolution = () => {
 
   return (
     <Grid container direction="column">
+      <Head>
+        <title key="title">
+          The Revolution - Cutting-Edge Software | Arc Development
+        </title>
+        <meta
+          name="description"
+          key="description"
+          content="Visionary insights, coupled with cutting-edge technology, 
+          is a recipe for revolution. Get a free online estimate instantly!"
+        />
+      </Head>
       <Grid item className={classes.rowContainer} style={{ marginTop: '2em' }}>
         <Typography
           align={matchesMD ? 'center' : undefined}

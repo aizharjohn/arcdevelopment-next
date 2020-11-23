@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Link from '../src/Link';
 import { makeStyles, useTheme } from '@material-ui/styles';
 import { Grid, Typography, Button, useMediaQuery } from '@material-ui/core';
@@ -43,6 +44,17 @@ const Services = (props) => {
 
   return (
     <Grid container direction="column">
+      <Head>
+        <title key="title">
+          Top Custom Software Development Services | Arc Development
+        </title>
+      </Head>
+      <meta
+        name="description"
+        key="description"
+        content="Cutting-edge software, mobile app, and website development 
+        services with sleek custom designs - get a free online estimate instantly!"
+      />
       <Grid item>
         <Typography
           align={matchesSM ? 'center' : undefined}

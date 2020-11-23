@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 import axios from 'axios';
 import Link from '../src/Link';
 import { makeStyles, useTheme } from '@material-ui/styles';
@@ -186,6 +187,15 @@ const Contact = (props) => {
 
   return (
     <Grid container direction="row">
+      <Head>
+        <title key="title">Contact Us | Arc Development</title>
+        <meta
+          name="description"
+          key="description"
+          content="Let us guide you through the custom software design and development process. 
+          Send us a message with any of your ideas or questions to get started!"
+        />
+      </Head>
       <Grid
         item
         container

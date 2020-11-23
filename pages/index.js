@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Link from '../src/Link';
 import Lottie from 'react-lottie';
 import { useTheme } from '@material-ui/styles';
@@ -34,6 +35,18 @@ const LandingPage = (props) => {
   };
   return (
     <Grid container direction="column" className={classes.mainContainer}>
+      <Head>
+        <title key="title">
+          Custom Software, Mobile Apps, and Websites | Arc Development
+        </title>
+        <meta
+          name="description"
+          key="description"
+          content="Pristine software custom-designed from the 
+          ground up with cutting-edge optimizations. 
+          Use our free estimate calculator to check your project cost!"
+        />
+      </Head>
       <Grid item>
         {/*-----Hero Block-----*/}
         <Grid container justify="flex-end" alignItems="center" direction="row">

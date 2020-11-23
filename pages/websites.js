@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import Link from '../src/Link';
 import { makeStyles, useTheme } from '@material-ui/styles';
 import {
@@ -43,6 +44,17 @@ const Websites = (props) => {
 
   return (
     <Grid container direction="column">
+      <Head>
+        <title key="title">
+          Stunning Custom Website Design | Arc Development
+        </title>
+      </Head>
+      <meta
+        name="description"
+        key="description"
+        content="Completely custom designed and built from scratch to be blazing fast. 
+        Optimized code, server-side rendering, and perfect responsive design | 99% PageSpeed Score"
+      />
       <Grid
         item
         container
