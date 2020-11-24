@@ -10,6 +10,13 @@ export default class MyDocument extends Document {
         <Head>
           {/* PWA primary color */}
           <meta name="theme-color" content={Theme.palette.primary.main} />
+          {/* Open Graph Tags */}
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content="https://i.imgur.com/C8evBTM.png" />
+          <meta property="og:image:type" content="image/png" />
+          <meta property="og:image:width" content="1200" />
+          <meta property="og:image:height" content="630" />
+          <meta property="og:image:alt" content="company logo" />
           <link rel="icon" href="/favicon.png" />
           <link
             href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:ital,wght@0,100;0,400;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap"

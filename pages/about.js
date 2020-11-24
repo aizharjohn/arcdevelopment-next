@@ -55,6 +55,13 @@ const About = (props) => {
           affordable, and aesthetic software design and development services in the Midwest. 
           Get a free estimate now."
         />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwest | About Us"
+          key="og:title"
+        />
+        <meta property="og:url" key="og:url" content="arc.com/about" />
+        <link rel="canonical" key="canonical" href="arc.com/about" />
       </Head>
       <Grid
         item

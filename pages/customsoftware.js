@@ -82,22 +82,29 @@ const CustomSoftware = (props) => {
   };
 
   return (
-    <Grid container direction='column'>
+    <Grid container direction="column">
       <Head>
-        <title key='title'>
+        <title key="title">
           Custom Software Development and Design - Free Estimate
         </title>
         <meta
-          name='description'
-          key='description'
-          content='Cutting-edge custom software development with gorgeous designs from scratch 
-          - let us optimize your business, solving problems instead of creating new ones.'
+          name="description"
+          key="description"
+          content="Cutting-edge custom software development with gorgeous designs from scratch 
+          - let us optimize your business, solving problems instead of creating new ones."
         />
+        <meta
+          property="og:title"
+          content="Bringing West Coast Technology to the Midwest | Custom Software Development"
+          key="og:title"
+        />
+        <meta property="og:url" key="og:url" content="arc.com/customsoftware" />
+        <link rel="canonical" key="canonical" href="arc.com/customsoftware" />
       </Head>
       <Grid
         item
         container
-        direction='row'
+        direction="row"
         justify={matchesMD ? 'center' : undefined}
         className={classes.rowContainer}
         style={{ marginTop: matchesXS ? '1em' : '2em' }}
@@ -111,23 +118,23 @@ const CustomSoftware = (props) => {
             <IconButton
               style={{ backgroundColor: 'transparent' }}
               component={Link}
-              href='/services'
+              href="/services"
               onClick={() => props.setSelectedIndex(0)}
             >
-              <img src='/assets/backArrow.svg' alt='Back to Services Page' />
+              <img src="/assets/backArrow.svg" alt="Back to Services Page" />
             </IconButton>
           </Grid>
         </Hidden>
-        <Grid item container direction='column' className={classes.heading}>
+        <Grid item container direction="column" className={classes.heading}>
           <Grid item>
-            <Typography align={matchesMD ? 'center' : undefined} variant='h2'>
+            <Typography align={matchesMD ? 'center' : undefined} variant="h2">
               Custom Software Development
             </Typography>
           </Grid>
           <Grid item>
             <Typography
               align={matchesMD ? 'center' : undefined}
-              variant='body1'
+              variant="body1"
               paragraph
             >
               Whether we're replacing old software or inventing new solutions,
@@ -135,7 +142,7 @@ const CustomSoftware = (props) => {
             </Typography>
             <Typography
               align={matchesMD ? 'center' : undefined}
-              variant='body1'
+              variant="body1"
               paragraph
             >
               Using regular commercial software leaves you with a lot of stuff
@@ -145,7 +152,7 @@ const CustomSoftware = (props) => {
             </Typography>
             <Typography
               align={matchesMD ? 'center' : undefined}
-              variant='body1'
+              variant="body1"
               paragraph
             >
               Our custom solutions are designed from the ground up with your
@@ -156,7 +163,7 @@ const CustomSoftware = (props) => {
             </Typography>
             <Typography
               align={matchesMD ? 'center' : undefined}
-              variant='body1'
+              variant="body1"
               paragraph
             >
               We create exactly what you want, exactly how you want it.
@@ -168,12 +175,12 @@ const CustomSoftware = (props) => {
             <IconButton
               style={{ backgroundColor: 'transparent' }}
               component={Link}
-              href='/mobileapps'
+              href="/mobileapps"
               onClick={() => props.setSelectedIndex(2)}
             >
               <img
-                src='/assets/forwardArrow.svg'
-                alt='Forward to iOS/Android App Development Page'
+                src="/assets/forwardArrow.svg"
+                alt="Forward to iOS/Android App Development Page"
               />
             </IconButton>
           </Grid>
@@ -182,32 +189,32 @@ const CustomSoftware = (props) => {
       <Grid
         item
         container
-        direction='row'
-        justify='center'
+        direction="row"
+        justify="center"
         style={{ marginTop: '15em', marginBottom: '20em' }}
         className={classes.rowContainer}
       >
         <Grid
           item
           container
-          direction='column'
+          direction="column"
           md
-          alignItems='center'
+          alignItems="center"
           style={{ maxWidth: '40em' }}
         >
           <Grid item>
-            <Typography variant='h4'>Save Energy</Typography>
+            <Typography variant="h4">Save Energy</Typography>
           </Grid>
           <Grid item>
-            <img src='/assets/bulb.svg' alt='lightbulb' />
+            <img src="/assets/bulb.svg" alt="lightbulb" />
           </Grid>
         </Grid>
         <Grid
           item
           container
-          direction='column'
+          direction="column"
           md
-          alignItems='center'
+          alignItems="center"
           style={{
             maxWidth: '40em',
             marginTop: matchesSM ? '10em' : 0,
@@ -215,25 +222,25 @@ const CustomSoftware = (props) => {
           }}
         >
           <Grid item>
-            <Typography variant='h4'>Save Time</Typography>
+            <Typography variant="h4">Save Time</Typography>
           </Grid>
           <Grid item>
-            <img src='/assets/stopwatch.svg' alt='stopwatch' />
+            <img src="/assets/stopwatch.svg" alt="stopwatch" />
           </Grid>
         </Grid>
         <Grid
           item
           container
-          direction='column'
+          direction="column"
           md
-          alignItems='center'
+          alignItems="center"
           style={{ maxWidth: '40em' }}
         >
           <Grid item>
-            <Typography variant='h4'>Save Money</Typography>
+            <Typography variant="h4">Save Money</Typography>
           </Grid>
           <Grid item>
-            <img src='/assets/cash.svg' alt='cash' />
+            <img src="/assets/cash.svg" alt="cash" />
           </Grid>
         </Grid>
       </Grid>
@@ -242,7 +249,7 @@ const CustomSoftware = (props) => {
         container
         alignItems={matchesMD ? 'center' : undefined}
         direction={matchesMD ? 'column' : 'row'}
-        justify='space-around'
+        justify="space-around"
         className={classes.rowContainer}
       >
         <Grid
@@ -253,22 +260,22 @@ const CustomSoftware = (props) => {
           className={classes.itemContainer}
           md
         >
-          <Grid item container direction='column' md>
+          <Grid item container direction="column" md>
             <Grid item>
-              <Typography variant='h4' align={matchesSM ? 'center' : undefined}>
+              <Typography variant="h4" align={matchesSM ? 'center' : undefined}>
                 Digital Documents & Data
               </Typography>
             </Grid>
             <Grid item>
               <Typography
-                variant='body1'
+                variant="body1"
                 paragraph
                 align={matchesSM ? 'center' : undefined}
               >
                 Reduce Errors. Reduce Waste. Reduce Costs.
               </Typography>
               <Typography
-                variant='body1'
+                variant="body1"
                 paragraph
                 align={matchesSM ? 'center' : undefined}
               >
@@ -277,7 +284,7 @@ const CustomSoftware = (props) => {
                 impact this has, it causes harm to your bottom line as well.
               </Typography>
               <Typography
-                variant='body1'
+                variant="body1"
                 paragraph
                 align={matchesSM ? 'center' : undefined}
               >
@@ -309,15 +316,15 @@ const CustomSoftware = (props) => {
               style={{ maxHeight: 260, maxWidth: 280 }}
             />
           </Grid>
-          <Grid item container direction='column' md>
+          <Grid item container direction="column" md>
             <Grid item>
-              <Typography variant='h4' align={matchesSM ? 'center' : 'right'}>
+              <Typography variant="h4" align={matchesSM ? 'center' : 'right'}>
                 Scale
               </Typography>
             </Grid>
             <Grid item>
               <Typography
-                variant='body1'
+                variant="body1"
                 align={matchesSM ? 'center' : 'right'}
                 paragraph
               >
@@ -332,27 +339,27 @@ const CustomSoftware = (props) => {
       <Grid
         item
         container
-        direction='row'
+        direction="row"
         style={{ marginTop: '20em', marginBottom: '20em' }}
         className={classes.rowContainer}
       >
-        <Grid item container direction='column' alignItems='center'>
+        <Grid item container direction="column" alignItems="center">
           <Grid item>
             <img
-              src='/assets/root.svg'
-              alt='tree with roots extending out'
+              src="/assets/root.svg"
+              alt="tree with roots extending out"
               height={matchesSM ? '350em' : '450em'}
               width={matchesSM ? '350em' : '450em'}
             />
           </Grid>
           <Grid item className={classes.itemContainer}>
-            <Typography variant='h4' gutterBottom align='center'>
+            <Typography variant="h4" gutterBottom align="center">
               Root-Cause Analysis
             </Typography>
-            <Typography variant='body1' paragraph align='center'>
+            <Typography variant="body1" paragraph align="center">
               Many problems are merely symptoms of larger, underlying issues.
             </Typography>
-            <Typography variant='body1' paragraph align='center'>
+            <Typography variant="body1" paragraph align="center">
               We can help you thoroughly examine all areas of your business to
               develop a holistic plan for the most effective implementation of
               technology.
@@ -365,7 +372,7 @@ const CustomSoftware = (props) => {
         container
         alignItems={matchesMD ? 'center' : undefined}
         direction={matchesMD ? 'column' : 'row'}
-        justify='space-around'
+        justify="space-around"
         style={{ marginBottom: '20em' }}
         className={classes.rowContainer}
       >
@@ -377,22 +384,22 @@ const CustomSoftware = (props) => {
           style={{ marginBottom: matchesMD ? '15em' : 0 }}
           md
         >
-          <Grid item container direction='column' md>
+          <Grid item container direction="column" md>
             <Grid item>
-              <Typography variant='h4' align={matchesSM ? 'center' : undefined}>
+              <Typography variant="h4" align={matchesSM ? 'center' : undefined}>
                 Automation
               </Typography>
             </Grid>
             <Grid item>
               <Typography
-                variant='body1'
+                variant="body1"
                 paragraph
                 align={matchesSM ? 'center' : undefined}
               >
                 Why waste time when you don't have to?
               </Typography>
               <Typography
-                variant='body1'
+                variant="body1"
                 paragraph
                 align={matchesSM ? 'center' : undefined}
               >
@@ -400,7 +407,7 @@ const CustomSoftware = (props) => {
                 actions which can now easily be automated.
               </Typography>
               <Typography
-                variant='body1'
+                variant="body1"
                 paragraph
                 align={matchesSM ? 'center' : undefined}
               >
@@ -431,22 +438,22 @@ const CustomSoftware = (props) => {
               style={{ maxHeight: 310, maxWidth: 155 }}
             />
           </Grid>
-          <Grid item container direction='column' md>
+          <Grid item container direction="column" md>
             <Grid item>
-              <Typography variant='h4' align={matchesSM ? 'center' : 'right'}>
+              <Typography variant="h4" align={matchesSM ? 'center' : 'right'}>
                 User Experience Design
               </Typography>
             </Grid>
             <Grid item>
               <Typography
-                variant='body1'
+                variant="body1"
                 align={matchesSM ? 'center' : 'right'}
                 paragraph
               >
                 A good design that isn't usable isn't a good design.
               </Typography>
               <Typography
-                variant='body1'
+                variant="body1"
                 align={matchesSM ? 'center' : 'right'}
                 paragraph
               >
@@ -454,7 +461,7 @@ const CustomSoftware = (props) => {
                 and frustating?
               </Typography>
               <Typography
-                variant='body1'
+                variant="body1"
                 align={matchesSM ? 'center' : 'right'}
                 paragraph
               >
