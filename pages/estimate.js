@@ -344,7 +344,7 @@ const Estimate = () => {
 
   const defaultOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     animationData: estimateAnimation,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',

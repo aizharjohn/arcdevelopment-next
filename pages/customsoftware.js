@@ -47,7 +47,7 @@ const CustomSoftware = (props) => {
 
   const documentsOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     animationData: documentsAnimation,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
@@ -56,7 +56,7 @@ const CustomSoftware = (props) => {
 
   const scaleOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     animationData: scaleAnimation,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
@@ -65,7 +65,7 @@ const CustomSoftware = (props) => {
 
   const automationOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     animationData: automationAnimation,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
@@ -74,7 +74,7 @@ const CustomSoftware = (props) => {
 
   const uxOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     animationData: uxAnimation,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',

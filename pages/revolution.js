@@ -25,7 +25,7 @@ const Revolution = () => {
 
   const defaultOptions = {
     loop: true,
-    autoplay: false,
+    autoplay: true,
     animationData: technologyAnimation,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
@@ -235,7 +235,6 @@ const Revolution = () => {
         <Grid item container justify={matchesMD ? 'center' : 'flex-end'} lg>
           <Lottie
             options={defaultOptions}
-            isStopped={true}
             style={{ maxWidth: '40em', margin: 0 }}
           />
         </Grid>
