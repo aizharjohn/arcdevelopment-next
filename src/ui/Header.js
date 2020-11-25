@@ -118,7 +118,7 @@ const Header = (props) => {
         value={props.value}
         className={classes.tabContainer}
         onChange={handleChange}
-        indicatorColor="primary"
+        indicatorColor='primary'
       >
         {routes.map((route, index) => (
           <Tab
@@ -131,24 +131,26 @@ const Header = (props) => {
             aria-owns={route.ariaOwns}
             aria-haspopup={route.ariaPopup}
             onMouseOver={route.mouseOver}
+            style={{ textDecoration: 'none' }}
           />
         ))}
       </Tabs>
       <Button
         component={Link}
-        href="/estimate"
+        href='/estimate'
         disableRipple
-        variant="contained"
-        color="secondary"
+        variant='contained'
+        color='secondary'
         className={classes.button}
         onClick={() => {
           props.setValue(5);
         }}
+        style={{ textDecoration: 'none' }}
       >
         Free Estimate
       </Button>
       <Menu
-        id="simple-menu"
+        id='simple-menu'
         anchorEl={anchorEl}
         open={openMenu}
         onClose={handleClose}
@@ -222,7 +224,7 @@ const Header = (props) => {
               root: classes.drawerItemEstimate,
               selected: classes.drawerItemSelected,
             }}
-            href="/estimate"
+            href='/estimate'
             selected={props.value === 5}
           >
             <ListItemText className={classes.drawerItem} disableTypography>
@@ -244,19 +246,19 @@ const Header = (props) => {
   return (
     <>
       <ElevationScroll>
-        <AppBar position="fixed" className={classes.appBar}>
+        <AppBar position='fixed' className={classes.appBar}>
           <Toolbar disableGutters>
             <Button
               component={Link}
-              href="/"
+              href='/'
               className={classes.logoContainer}
               onClick={() => props.setValue(0)}
               disableRipple
             >
               <img
                 className={classes.logo}
-                src="/assets/logo.svg"
-                alt="company_logo"
+                src='/assets/logo.svg'
+                alt='company_logo'
               />
             </Button>
             <Hidden mdDown>{tabs}</Hidden>
