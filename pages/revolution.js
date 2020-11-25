@@ -56,7 +56,7 @@ const Revolution = () => {
         <Typography
           align={matchesMD ? 'center' : undefined}
           style={{ fontFamily: 'Pacifico' }}
-          variant="h2"
+          variant="h1"
         >
           The Revolution
         </Typography>
