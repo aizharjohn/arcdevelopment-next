@@ -14,6 +14,7 @@ export const headerStyles = makeStyles((theme) => ({
   },
   logo: {
     height: '8em',
+    textTransform: 'none',
     [theme.breakpoints.down('md')]: {
       height: '7em',
     },
