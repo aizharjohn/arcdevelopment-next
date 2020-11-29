@@ -131,6 +131,7 @@ const Header = (props) => {
             aria-owns={route.ariaOwns}
             aria-haspopup={route.ariaPopup}
             onMouseOver={route.mouseOver}
+            style={{ textDecoration: 'none' }}
           />
         ))}
       </Tabs>
@@ -144,6 +145,7 @@ const Header = (props) => {
         onClick={() => {
           props.setValue(5);
         }}
+        style={{ textDecoration: 'none' }}
       >
         Free Estimate
       </Button>
